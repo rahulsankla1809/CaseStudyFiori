@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="1.0" xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx"
+	xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:sap="http://www.sap.com/Protocols/SAPData">
+	<edmx:DataServices m:DataServiceVersion="2.0">
+		<Schema Namespace="YODS_DEMO_MONITOR_SRV" xml:lang="en" sap:schema-version="1" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+			<EntityType Name="PurchaseOrderMonitor" sap:content-version="1">
+				<Key><PropertyRef Name="Purachaseorder"/><PropertyRef Name="Lineitemnumber"/></Key><Property Name="Purachaseorder" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false" sap:label="Purchasing Doc."
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Lineitemnumber" Type="Edm.String" Nullable="false" MaxLength="5" sap:unicode="false" sap:label="Item" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Companycode" Type="Edm.String" Nullable="false" MaxLength="4" sap:unicode="false" sap:label="Company Code"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Ordercategory" Type="Edm.String" Nullable="false" MaxLength="1" sap:unicode="false" sap:label="Doc. Category"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Documenttype" Type="Edm.String" Nullable="false" MaxLength="4" sap:unicode="false" sap:label="Document Type"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Creationdate" Type="Edm.DateTime" Nullable="false" Precision="7" sap:unicode="false" sap:label="Created on"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Createdbyuser" Type="Edm.String" Nullable="false" MaxLength="12" sap:unicode="false" sap:label="Created by"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Vendornumber" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false" sap:label="Vendor" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Purchasingorganization" Type="Edm.String" Nullable="false" MaxLength="4" sap:unicode="false" sap:label="Purchasing Org."
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Purchasinggroup" Type="Edm.String" Nullable="false" MaxLength="3" sap:unicode="false" sap:label="Purch. Group"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Materialnumber" Type="Edm.String" Nullable="false" MaxLength="18" sap:unicode="false" sap:label="Material"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Plant" Type="Edm.String" Nullable="false" MaxLength="4" sap:unicode="false" sap:label="Plant" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Storagelocation" Type="Edm.String" Nullable="false" MaxLength="4" sap:unicode="false" sap:label="Stor. Location"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Orderquantity" Type="Edm.Decimal" Nullable="false" Precision="13" Scale="3" sap:unicode="false" sap:unit="Orderquantityunit"
+					sap:label="PO Quantity" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Orderquantityunit" Type="Edm.String" Nullable="false" MaxLength="3" sap:unicode="false" sap:label="Order Unit"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false" sap:semantics="unit-of-measure"/><Property Name="Netamout" Type="Edm.Decimal" Nullable="false" Precision="14" Scale="3" sap:unicode="false" sap:unit="Currencycode"
+					sap:label="Net Value" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Currencycode" Type="Edm.String" Nullable="false" MaxLength="5" sap:unicode="false" sap:label="Currency"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false" sap:semantics="currency-code"/><Property Name="Planneddeliveydays" Type="Edm.Decimal" Nullable="false" Precision="3" Scale="0" sap:unicode="false"
+					sap:label="Pl. Deliv. Time" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/></EntityType>
+			<EntityContainer Name="YODS_DEMO_MONITOR_SRV_Entities" m:IsDefaultEntityContainer="true" sap:supported-formats="atom json xlsx"><EntitySet Name="PurchaseOrderMonitorSet" EntityType="YODS_DEMO_MONITOR_SRV.PurchaseOrderMonitor" sap:creatable="false"
+				sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:content-version="1"/></EntityContainer><atom:link rel="self"
+				href="https://webidecp-a95fe0278.dispatcher.hana.ondemand.com/destinations/SAP_Gateway/sap/opu/odata/sap/YODS_DEMO_MONITOR_SRV/$metadata"
+				xmlns:atom="http://www.w3.org/2005/Atom"/><atom:link rel="latest-version"
+				href="https://webidecp-a95fe0278.dispatcher.hana.ondemand.com/destinations/SAP_Gateway/sap/opu/odata/sap/YODS_DEMO_MONITOR_SRV/$metadata"
+				xmlns:atom="http://www.w3.org/2005/Atom"/></Schema>
+	</edmx:DataServices>
+</edmx:Edmx>

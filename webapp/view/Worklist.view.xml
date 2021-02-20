@@ -1,0 +1,20 @@
+<mvc:View controllerName="com.test.demomonitorpurchaseorder.controller.Worklist" xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc"
+	xmlns:smartTable="sap.ui.comp.smarttable" xmlns:smartFilterBar="sap.ui.comp.smartfilterbar">
+	<Page id="page" title="{i18n>worklistTitle}">
+		<content>
+			<!--<smartFilterBar:SmartFilterBar id="smartFilterBar" entitySet="PurchaseOrderMonitorSet" persistencyKey="SmartFilterPurchaseOrder"-->
+			<!--	basicSearchFieldName="Companycode" enableBasicSearch="true">-->
+			<!--	<smartFilterBar:layoutData>-->
+			<!--		<FlexItemData shrinkFactor="0"/>-->
+			<!--	</smartFilterBar:layoutData>-->
+			<!--</smartFilterBar:SmartFilterBar>-->
+			<smartTable:SmartTable id="SmartTable" smartFilterId="smartFilterBar" entitySet="PurchaseOrderMonitorSet" tableType="Table"
+				useExportToExcel="true" beforeExport="onBeforeExport" useTablePersonalisation="true" header="Line Items"
+				persistencyKey="SmartTablePurchaseOrder" showRowCount="true" enableAutoBinding="true" class="sapUiResponsiveContentPadding">
+				<smartTable:layoutData>
+					<FlexItemData growFactor="1" baseSize="0%"/>
+				</smartTable:layoutData>
+			</smartTable:SmartTable>
+		</content>
+	</Page>
+</mvc:View>
