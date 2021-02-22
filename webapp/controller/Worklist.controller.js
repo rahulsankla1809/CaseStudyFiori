@@ -6,11 +6,8 @@ sap.ui.define([
 	"sap/ui/model/FilterOperator"
 ], function (BaseController, JSONModel, formatter, Filter, FilterOperator) {
 	"use strict";
-
 	return BaseController.extend("com.test.demomonitorpurchaseorder.controller.Worklist", {
 		formatter: formatter,
-		onInit: function () {
-		}
-
+		onInit: function () {}
 	});
 });
